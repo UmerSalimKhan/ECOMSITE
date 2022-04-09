@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <title>Product Page</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/product.css">
+</body>
+<a href="catogory.html" target="_blank">
+    <img src="image/back (4).png"></a>
+  </div>
+<div class="container">
+<div class="wrapper">
+    <div class="product-box">
+        <div class="all-images">
+        <div class="small-images">
+        <img src = "image/iphone13pink1.jpg" width="150" height="150" onclick="clickimg(this)">
+        <img src = "image/iphone13pink2.jpg" width="150" height="150"  onclick="clickimg(this)">
+        <img src = "image/iphone13pink3.jpeg" width="150" height="150" onclick="clickimg(this)">
+        <img src = "image/iphone13pink4.jpg" width="150" height="150"  onclick="clickimg(this)">
+        </div>
+        <div class="main-images">
+            <img src = "image/iphone13pink1.jpg"  width="600" height="400" id = "imagebox">
+        </div>
+    </div>
+    </div>
+    <div class="text">
+        <div class="content">
+            <p class= "brand">Brand: Apple</p>
+            <h2>Apple iPhone 13 (128 GB Storage, pink)</h2>
+            <div class="review">
+                <span>(4.8)</span>
+                <span class = "fa fa-star"></span>
+            </div>
+            <div class="price-box">
+                <p class="price">₹79,990</p>
+                <button onclick="document.location='paymentIphone13Pink.html'" id="btn">Buy</button>
+            </div>
+            
+        </div>
+    </div>
+    </div>
+</div>
+
+<script>
+    function clickimg(smallImg){
+        var fullImg = document.getElementById("imagebox");
+        fullImg.src = smallImg.src
+
+    }
+</script>
+</body>
+</html>
